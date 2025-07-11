@@ -1,0 +1,10 @@
+/* @use '../../design_tokens/scss/typography-usage.scss' as *; */
+
+.ds-c-heading {
+    /* @include ds-theme-typography-display-default(); */
+    color: var(--ds-theme-color-content-brand);
+    /* former hard coded typography  */
+    font-family: inter, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}

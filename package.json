@@ -1,0 +1,23 @@
+{
+  "name": "design_token_system",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "style-dictionary build",
+    "sass": "sass ./design_components/scss/components.scss ./design_components/scss/components.css"
+  },
+  "_comment0": "build: npm run sass && style-dictionary build",
+  "devDependencies": {
+    "storybook": "^9.0.16",
+    "style-dictionary": "^5.0.0"
+  },
+  "_comment1": "regular dependences that are going to ship with the libary",
+  "dependencies": {
+    "sass": "^1.89.2"
+  }
+}
