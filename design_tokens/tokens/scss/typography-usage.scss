@@ -1,0 +1,27 @@
+@use './abstracts/variables' as *;
+/* ------------------------------------*\
+    #TYPOGRAPHY APPLICATIONS
+\*------------------------------------ */
+
+//
+// Typography applications are Tier 2 values that map
+// typography presets to high-level UI applications.
+//
+
+@mixin ds-theme-typography-display-default($important: null) {
+    font-family: var(--ds-theme-typography-display-default-mobile-font-family) $important;
+    font-weight: var(--ds-theme-typography-display-default-mobile-font-weight) $important;
+    font-size: var(--ds-theme-typography-display-default-mobile-font-size) $important;
+    line-height: var(--ds-theme-typography-display-default-mobile-line-height) $important;
+    letter-spacing: var(--ds-theme-typography-display-default-mobile-letter-spacing) $important;
+    text-transform: var(--ds-theme-typography-display-default-mobile-text-transform) $important;
+
+    @media all and (min-width: $ds-bp-md) {
+        font-family: var(--ds-theme-typography-display-default-font-family) $important;
+        font-weight: var(--ds-theme-typography-display-default-font-weight) $important;
+        font-size: var(--ds-theme-typography-display-default-font-size) $important;
+        line-height: var(--ds-theme-typography-display-default-line-height) $important;
+        letter-spacing: var(--ds-theme-typography-display-default-letter-spacing) $important;
+        text-transform: var(--ds-theme-typography-display-default-text-transform) $important;
+    }
+}

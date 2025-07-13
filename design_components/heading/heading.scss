@@ -1,0 +1,14 @@
+@use '../../design_tokens/tokens/scss/typography-usage.scss' as *;
+
+.ds-c-heading {
+    color: var(--ds-theme-color-content-brand);
+    
+    /* former hardcoded values replaced by @mixins */
+
+    // font-family: 'inter', sans-serif;
+    // font-size: 2rem;
+    // font-weight: bold;
+ 
+    /* @mixin */
+    @include ds-theme-typography-display-default();
+}

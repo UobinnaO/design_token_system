@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    #BREAKPOINT VARIABLES
+\*------------------------------------*/
+.ds-c-button {
+  appearance: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  background: var(--ds-theme-button-color-background-default);
+  color: var(--ds-theme-button-color-content-default);
+  /* before */
+  /* after */
+  padding: calc(0.5rem * 2) calc(0.5rem * 3);
+  border: var(--ds-theme-border-width-sm) solid var(--ds-theme-button-color-border-default);
+  border-radius: var(--ds-theme-border-radius-lg);
+  transition: transform var(--ds-theme-animation-fade-quick) var(--ds-theme-animation-ease);
+  /* before; values manually applied */
+  box-shadow: var(--ds-theme-box-shadow-sm-x) var(--ds-theme-box-shadow-sm-y) var(--ds-theme-box-shadow-sm-blur) var(--ds-theme-box-shadow-sm-spread);
+  /* after; allowing style dictionary to apply automatically */
+  /* box-shodow ....incomming */
+  /* animation ....incomming */
+}
+.ds-c-button:hover {
+  transform: scale(1.2);
+}
+
+/* ------------------------------------*\
+    #TYPOGRAPHY APPLICATIONS
+\*------------------------------------ */
+.ds-c-heading {
+  color: var(--ds-theme-color-content-brand);
+  /* former hardcoded values replaced by @mixins */
+  /* @mixin */
+  font-family: var(--ds-theme-typography-display-default-mobile-font-family);
+  font-weight: var(--ds-theme-typography-display-default-mobile-font-weight);
+  font-size: var(--ds-theme-typography-display-default-mobile-font-size);
+  line-height: var(--ds-theme-typography-display-default-mobile-line-height);
+  letter-spacing: var(--ds-theme-typography-display-default-mobile-letter-spacing);
+  text-transform: var(--ds-theme-typography-display-default-mobile-text-transform);
+}
+@media all and (min-width: 48rem) {
+  .ds-c-heading {
+    font-family: var(--ds-theme-typography-display-default-font-family);
+    font-weight: var(--ds-theme-typography-display-default-font-weight);
+    font-size: var(--ds-theme-typography-display-default-font-size);
+    line-height: var(--ds-theme-typography-display-default-line-height);
+    letter-spacing: var(--ds-theme-typography-display-default-letter-spacing);
+    text-transform: var(--ds-theme-typography-display-default-text-transform);
+  }
+}
+
+/*# sourceMappingURL=components.css.map */

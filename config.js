@@ -25,12 +25,12 @@ ${dictionary.allTokens
 });
 
 export default {
-  source: ["tokens/**/*.json"],
+  source: ["design_tokens/**/*.json"],
   platforms: {
     css: {
       prefix: "ds",
       transformGroup: "css",
-      buildPath: "build/css/",
+      buildPath: "design_tokens/build/css/",
       files: [
         {
           destination: "_variables.css",

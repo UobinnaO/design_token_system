@@ -1,0 +1,34 @@
+@use '../../design_tokens/tokens/scss/abstracts/variables.scss' as *;
+
+.ds-c-button {
+    appearance: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    background: var(--ds-theme-button-color-background-default);
+    color: var(--ds-theme-button-color-content-default);
+
+    /* before */
+    // padding: 1rem 1.5rem;
+    // border: 1px solid var(--ds-theme-button-color-border-default);
+
+    /* after */
+    padding: size(2) size(3);
+    border: var(--ds-theme-border-width-sm) solid var(--ds-theme-button-color-border-default);
+    border-radius: var(--ds-theme-border-radius-lg);
+    transition: transform var(--ds-theme-animation-fade-quick) var(--ds-theme-animation-ease);
+
+    &:hover {
+        transform: scale(1.20);
+    }
+
+    /* before; values manually applied */
+    box-shadow: var(--ds-theme-box-shadow-sm-x) var(--ds-theme-box-shadow-sm-y) var(--ds-theme-box-shadow-sm-blur) var(--ds-theme-box-shadow-sm-spread);
+
+
+    /* after; allowing style dictionary to apply automatically */
+
+    /* box-shodow ....incomming */
+    /* animation ....incomming */
+
+}
